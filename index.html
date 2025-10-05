@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="login-box">
+        <div class="login">
+            <h2>LOGIN</h2>
+            <div class="form">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <button onclick="login()">LOGIN</button>
+                <p>Don't have an account?<a >Register</a></p>
+            </div>
+
+            <script>
+        function login(){
+            const username=document.getElementById('username').value;
+            const password=document.getElementById('password').value;
+            if (username==='jishana'&& password==='1234'){
+                alert('Login successful!');
+                window.location.href='dashboard.html';//Redirect to dashboard
+            }else{
+                alert('Invalid credentials.Please try again');
+            }
+        }
+    </script>
+        </div>
+    </div>
+   

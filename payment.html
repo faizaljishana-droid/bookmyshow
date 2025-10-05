@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="icon" href="paylogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="index">
+            <ul class="ulone">
+                <li>Movies</li>
+                <li>Stream</li>
+                <li>Events</li>
+                <li>Plays</li>
+                <li>Sports</li>
+                <li>Activities</li>
+            </ul >
+            <ul class="ultwo" >
+                <li>List your show</li>
+                <li>Corporates</li>
+                <li><a href="img/about.html"> About</a></li>
+                <li>Gift cards</li>
+            </ul >
+        </nav>
+        <div class="icon"></div>
+        <nav class="mobile-nav">
+            <ul>
+             <li><a><ion-icon name="home"></ion-icon></a></li>
+             <li><a><ion-icon name="search"></ion-icon></a></li>
+             <li><a><ion-icon name="pricetags"></ion-icon></a></li>
+             <li><a><ion-icon name="cart"></ion-icon></a></li>
+             <li><a><ion-icon name="contact"></ion-icon></a></li>
+            </ul>
+        </nav>
+        <div class="login-box">
+            <div class="login">
+                <h2>Payment</h2>
+                <div class="form">
+                    <label>Name</label>
+                    <input type="text" id="payment-name" placeholder="Enter Your Name">
+                    <label>Total Amount</label>
+                    <input type="number" id="payment" placeholder="Enter Total Amount">
+                    <button onclick=confirm()>Confirm</button>
+                </div>
+
+                <script>
+                    function confirm(){
+                        var name=document.getElementById('payment-name');
+                        var pay=parseFloat(document.getElementById('payment').value);
+                        if(name="jishana"){
+                            if(pay>0){
+                                alert('Payment Successful');
+                                window.location.href='dashboard.html';
+                            }
+                            else{
+                                alert("Fill in the required fields ");
+                            }
+                        }
+                        else{
+                            alert("Fill in the required fields");
+                        }
+                    }
+                </script>
+            </div>
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        </div>
+            
+        </div>
+</body>
+</html>

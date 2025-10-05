@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="war2 logo.webp"></link>
+    <link rel="booking" href="ticketbooking.html"></link>
+    
+</head>
+<body>
+    <nav class="index">
+            <ul class="ulone">
+                <li>Movies</li>
+                <li>Stream</li>
+                <li>Events</li>
+                <li>Plays</li>
+                <li>Sports</li>
+                <li>Activities</li>
+            </ul >
+            <ul class="ultwo" >
+                <li>List your show</li>
+                <li>Corporates</li>
+                <li><a href="img/about.html"> About</a></li>
+                <li>Gift cards</li>
+            </ul >
+        </nav>
+        <ul>
+            <li><a><ion-icon name="home"></ion-icon></a></li>
+             <li><a><ion-icon name="search"></ion-icon></a></li>
+              <li><a><ion-icon name="pricetags"></ion-icon></a></li>
+               <li><a><ion-icon name="cart"></ion-icon></a></li>
+                <li><a><ion-icon name="contact"></ion-icon></a></li>
+        </ul>
+    </nav>
+    <div class="movie2-img-container">
+        <div class="movie-img-box">
+            <img src="war2.avif" alt="reload">
+            <p class="in-cinemas">In Cinemas</p>
+        </div>
+        <div class="movie-box-para">
+            <h1 class="movie-name">War2</h1><br>
+            <div class="movie-rating">
+                <span class="rate"><ion-icon name="star-outline"></ion-icon>
+                7.7/10 (179.8k votes)<button>Rate Now</button></span><br><br>
+            </div>
+            <div class="lang">
+                <h4>2D,ICE,IMAX 2D,4DX, DOLBY CINEMA 2D</h4>
+                <p>Tamil,Telugu,Hindi</p>
+            </div>
+            <ul class="movie-details">
+                <li>2h 51m</li>
+                 <li>Action,Thriller</li>
+                  <li>UA16+</li>
+                   <li>14 Aug 2025</li>
+            </ul>
+            <div class="ticket-booking">
+                <button id="ticket" onclick="booking()">Book Tickets</button>
+            </div>
+
+            <script>
+                function booking(){
+                    document.getElementById("ticket");
+                    window.location.href="ticketbooking.html"
+                }
+            </script>
+        </div>
+    </div>
+    <div class="movie-content">
+        <h2>About The Movie</h2>
+        <p>Years ago Agent Kabir went rogue. Became Indi's greatestvillian ever. But this time, as he descends further into the deepest shadows India sends its deadliest, most lethal agent after him.</p>
+    </div>
+    <srcipt src="https://unpkg.com/ionicon@4.5.10-0/dist/ionicons.js"></srcipt>
+</body>
+</html>

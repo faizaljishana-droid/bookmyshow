@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThalaivanThalaivi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ththlogo.webp"></link>
+    <link rel="booking" href="ticketbooking.html"></link>
+    
+</head>
+<body>
+    <nav class="index">
+            <ul class="ulone">
+                <li>Movies</li>
+                <li>Stream</li>
+                <li>Events</li>
+                <li>Plays</li>
+                <li>Sports</li>
+                <li>Activities</li>
+            </ul >
+            <ul class="ultwo" >
+                <li>List your show</li>
+                <li>Corporates</li>
+                <li><a href="img/about.html"> About</a></li>
+                <li>Gift cards</li>
+            </ul >
+        </nav>
+    <div class="icon"></div>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a><ion-icon name="home"></ion-icon></a></li>
+             <li><a><ion-icon name="search"></ion-icon></a></li>
+              <li><a><ion-icon name="pricetags"></ion-icon></a></li>
+               <li><a><ion-icon name="cart"></ion-icon></a></li>
+                <li><a><ion-icon name="contact"></ion-icon></a></li>
+        </ul>
+    </nav>
+    <div class="movie3-img-container">
+        <div class="movie-img-box">
+            <img src="thalaivanthalaivi.avif" alt="reload">
+            <p class="in-cinemas">In Cinemas</p>
+        </div>
+        <div class="movie-box-para">
+            <h1 class="movie-name">ThalaivanThalaivi</h1><br>
+            <div class="movie-rating">
+                <span class="rate"><ion-icon name="star-outline"></ion-icon>
+                8.1/10 (35.6k votes)<button>Rate Now</button></span><br><br>
+            </div>
+            <div class="lang">
+                <h4>2D</h4>
+                <p>Tamil</p>
+            </div>
+            <ul class="movie-details">
+                <li>2h 20m</li>
+                 <li>Comedy,Drama,Romantic</li>
+                  <li>UA13+</li>
+                   <li>25 Jul 2025</li>
+            </ul>
+            <div class="ticket-booking">
+                <button id="ticket" onclick="booking()">Book Tickets</button>
+            </div>
+
+            <script>
+                function booking(){
+                    document.getElementById("ticket");
+                    window.location.href="ticketbooking.html"
+                }
+            </script>
+        </div>
+    </div>
+    <div class="movie-content">
+        <h2>About The Movie</h2>
+        <p>ThalaivanThalaivi is a rugged love story that explores the fiery dynamics between a strong-willed couple. As their relationship unfolds, love, conflict, and chaos blend into a powerful emotional journey.</p>
+    </div>
+    <srcipt src="https://unpkg.com/ionicon@4.5.10-0/dist/ionicons.js"></srcipt>
+</body>
+</html>

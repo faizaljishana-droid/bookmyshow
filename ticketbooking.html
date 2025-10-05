@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="icon" href="ticketlogo.webp">
+    <link rel="stylesheet" href="style.css">
+    <link rel="payment" href="payment.html">
+</head>
+<body>
+     <nav class="index">
+            <ul class="ulone">
+                <li>Movies</li>
+                <li>Stream</li>
+                <li>Events</li>
+                <li>Plays</li>
+                <li>Sports</li>
+                <li>Activities</li>
+            </ul >
+            <ul class="ultwo" >
+                <li>List your show</li>
+                <li>Corporates</li>
+                <li><a href="img/about.html"> About</a></li>
+                <li>Gift cards</li>
+            </ul >
+        </nav>
+    <div class="icon">
+    </div>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a><ion-icon name="home"></ion-icon></a></li>
+            <li><a><ion-icon name="search"></ion-icon></a></li>
+            <li><a><ion-icon name="pricetags"></ion-icon></a></li>
+            <li><a><ion-icon name="cart"></ion-icon></a></li>
+            <li><a><ion-icon name="contact"></ion-icon></a></li>
+        </ul>
+    </nav>
+    <div class="login-box">
+        <div class="login">
+            <h2>Book Tickets</h2>
+            <div class="form">
+                <label>Movies</label>
+                <select class="options">
+                    <option>Coolie</option>
+                    <option>War2</option>
+                    <option>ThalaivanThalaivi</option>
+                    <option>Mahavatar Narsimha</option>
+                    <option>Mareesan</option>
+                </select>
+                <label>Shows</label>
+                <select class="options"id="show">
+                    <option>First Show(6 am)</option>
+                    <option>Morning(10 am)</option>
+                    <option>Afternoon(1 pm)</option>
+                    <option>Evening(5 pm)</option>
+                    <option>Night(8 pm)</option>
+                    <option>Midnight(11 pm)</option>
+                </select>
+                <label>Language</label>
+                <select class="options">
+                    <option>Tamil</option>
+                    <option>Telugu</option>
+                    <option>Kannada</option>
+                    <option>Hindi</option>
+                </select>
+                <label>How many tickets</label>
+                <input type="number" id="ticket-num" placeholder="No.of Tickets ">
+                <button onclick=booking()>Book Now</button>
+            </div>
+
+
+            <script>
+                function booking() {
+                    var x=parseFloat(document.getElementById("ticket-num").value);
+                    var y=250;
+                    var output=x*y
+                    if(ifNaN(x)){
+                        alert("Fill the required fields")
+                    }
+                    else{
+                        alert('Ticket amount:Rs.250   '+
+                        '   No.of Tickets : '+parseFloat(document.getElementById("ticket-num").value)+
+                        '     Total amount : Rs. ' +output);
+                        window.location.href='payment.html'
+                    }
+                }
+                </script>
+        </div>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
